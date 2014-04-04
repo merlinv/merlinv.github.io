@@ -1,27 +1,38 @@
 .game-container {
+  margin-top: 100px;
   padding: 15px;
   border-radius: 6px;
   background-color: #CFCDCD;
-  height: 400px;
-  width: 400px;
+  height: 395px;
+  width: 395px;
   position: relative;
   display: block;
 }
+
 .grid-box {
-  height: 370px;
-  width: 370px;
+  height: 365px;
+  width: 365px;
   border-radius: 2px;
   background-color: #E2E2E2;
   position: absolute;
   z-index: 1;
 }
 
-.lighter-item {
-  width: 20px;
-  height: 20px;
+.grid-row{
   display: block;
-  background-color: #ccc;
+  clear: both;
+  height: 40px;
+  content: "";
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+
+.lighter-item {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 2.5px;
+  background-color: floralwhite;
   border-radius: 50%;
   moz-border-radius: 50%;
-  position: absolute;
 }
