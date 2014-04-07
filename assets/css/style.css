@@ -1,5 +1,5 @@
 .game-container {
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 15px;
   border-radius: 6px;
   background-color: #CFCDCD;
@@ -35,4 +35,10 @@
   background-color: floralwhite;
   border-radius: 50%;
   moz-border-radius: 50%;
+}
+
+#score {
+  text-align: center;
+  font-size: 4em;
+  font-family: fantasy;
 }

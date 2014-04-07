@@ -23,12 +23,25 @@
       </div>
       <div class="panel panel-default">
         <div class="panel-body">
-          <p class="">Your move:&nbsp;<span id="your-move" class="badge">1</span></p>
+          <p class="">Your move:&nbsp;<span id="your-move" class="badge"></span></p><button type="button" id="replay" class="btn btn-success">Play Again</button>
         </div>
       </div>
+      <div id="my-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content" style="margin-top:300px">
+            <div class="modal-body">
+              <h2 class="center-block" style="text-align:center;font-family:fantasy;font-size:40px;">YOU  WIN!!!</h2>
+              <span id="score" class="center-block"></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="center-block btn btn-success" data-dismiss="modal">Play Again</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
       <div class="center-block game-container">
         <div class="grid-box">
-        </div> 
+        </div>
       </div>
     </div>
   </body>
