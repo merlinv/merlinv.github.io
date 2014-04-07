@@ -54,7 +54,7 @@ var LIGHTER = {
     var y = parseInt(lighter.getAttribute("pos-y"));
     return {x: x,y: y};
   },
-  getLandOfLighter: function(lighter){
+  getNeighborOfLighter: function(lighter){
     var pos = this.getPosOfLighter(lighter);
     return [ [pos.x, pos.y + 1], [pos.x+1, pos.y+1], [pos.x+1, pos.y], [pos.x+1, pos.y-1], [pos.x, pos.y-1], [pos.x-1, pos.y-1], [pos.x-1, pos.y], [pos.x-1, pos.y+1] ];
   },
@@ -71,7 +71,7 @@ var LIGHTER = {
     $(".lighter-item").click(function(e){
       SETTINGS.MOVE += 1;
       that.updateMove();
-      var land = LIGHTER.getLandOfLighter(this);
+      var land = LIGHTER.getNeighborOfLighter(this);
       $.each(land, function(_, pos){
         var lighter = LIGHTER.getLighterByPos(pos[1], pos[0]);
         if (lighter != undefined){
